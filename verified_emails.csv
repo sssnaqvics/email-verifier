@@ -1,0 +1,11 @@
+email,status,syntax_valid,is_disposable,is_role_based,has_mx,smtp_deliverable,reason,checks_passed,mx_info,smtp_reason,smtp_code
+test@gmail.com,valid,True,False,False,True,,All verifications passed,"['Syntax ✓', 'Not disposable ✓', 'MX exists ✓', ""SMTP: Provider doesn't verify addresses (security policy)""]",Found 5 MX record(s),Provider doesn't verify addresses (security policy),0.0
+sanabibi.msais26@iba-suk.edu.pk,valid,True,False,False,True,True,All verifications passed,"['Syntax ✓', 'Not disposable ✓', 'MX exists ✓', 'SMTP verified ✓']",Found 7 MX record(s),Address accepted by server,250.0
+fake@nonexistent999.com,invalid,True,False,False,False,,MX: Domain does not exist,"['Syntax ✓', 'Not disposable ✓']",Domain does not exist,,
+user@mailinator.com,invalid,True,True,False,False,,Disposable email provider,['Syntax ✓'],,,
+info@mit.edu,invalid,True,False,False,True,False,SMTP: Address rejected by server,"['Syntax ✓', 'Not disposable ✓', 'MX exists ✓']",Found 1 MX record(s),Address rejected by server,550.0
+admin@yahoo.com,risky,True,False,True,True,,"Role-based email (info@, support@, etc)","['Syntax ✓', 'Not disposable ✓', 'MX exists ✓', ""SMTP: Provider doesn't verify addresses (security policy)""]",Found 3 MX record(s),Provider doesn't verify addresses (security policy),0.0
+postmaster@stanford.edu,invalid,True,False,False,True,False,SMTP: Address rejected by server,"['Syntax ✓', 'Not disposable ✓', 'MX exists ✓']",Found 2 MX record(s),Address rejected by server,550.0
+test@fake-domain-xyz.com,invalid,True,False,False,False,,MX: Domain does not exist,"['Syntax ✓', 'Not disposable ✓']",Domain does not exist,,
+support@outlook.com,risky,True,False,True,True,,"Role-based email (info@, support@, etc)","['Syntax ✓', 'Not disposable ✓', 'MX exists ✓', ""SMTP: Provider doesn't verify addresses (security policy)""]",Found 1 MX record(s),Provider doesn't verify addresses (security policy),0.0
+random@10minutemail.com,invalid,True,True,False,False,,Disposable email provider,['Syntax ✓'],,,
