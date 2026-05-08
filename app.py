@@ -1,4 +1,4 @@
-"""Email Verifier Pro - Professional Edition"""
+"""MZ Verifier - Professional Edition"""
 
 import streamlit as st
 import pandas as pd
@@ -12,7 +12,7 @@ from verifier.smtp_check import is_major_provider
 
 
 st.set_page_config(
-    page_title="Email Verifier Pro", 
+    page_title="MZ Verfier", 
     page_icon="✉", 
     layout="wide",
     initial_sidebar_state="expanded"
@@ -361,7 +361,7 @@ st.markdown("""
                 ✉
             </div>
             <div>
-                <h1>Email Verifier Pro</h1>
+                <h1>MZ Verifier</h1>
                 <p class="subtitle">Verify · Validate · Deliver — Built for lead generation</p>
             </div>
         </div>
@@ -834,7 +834,7 @@ with st.sidebar:
     <div style="display: flex; align-items: center; gap: 12px; padding: 8px 4px 20px 4px; border-bottom: 1px solid #334155; margin-bottom: 1.5rem;">
         <div style="width: 36px; height: 36px; background: #10B981; border-radius: 8px; display: flex; align-items: center; justify-content: center; color: white; font-size: 18px;">✉</div>
         <div>
-            <div style="color: white; font-weight: 600; font-size: 15px;">Verifier Pro</div>
+            <div style="color: white; font-weight: 600; font-size: 15px;">MZ Verifier</div>
             <div style="color: #64748B; font-size: 11px;">v1.0.0</div>
         </div>
     </div>
@@ -911,6 +911,6 @@ with st.sidebar:
     st.markdown("""
     <div style="padding: 8px; text-align: center;">
         <div style="color: #64748B; font-size: 11px;">Built for lead generation</div>
-        <div style="color: #475569; font-size: 10px; margin-top: 4px;">Email Verifier Pro · 2026</div>
+        <div style="color: #475569; font-size: 10px; margin-top: 4px;">MZ Verifier · 2026</div>
     </div>
     """, unsafe_allow_html=True)
